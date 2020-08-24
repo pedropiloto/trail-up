@@ -1,9 +1,9 @@
 const express = require('express')
 const logger = require('morgan')
-const eventRoutes = require('./routes/eventRoutes')
+const eventRoutes = require('./app/routes/eventRoutes')
 const {
   hasEnoughIngredients,
-} = require('./app/api/controllers/eventController.js')
+} = require('./app/controllers/eventController.js')
 const bodyParser = require('body-parser')
 const mongoose = require('./config/database') //database configuration
 const app = express()
