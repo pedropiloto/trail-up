@@ -1,3 +1,3 @@
 module.exports = Object.freeze({
-  SYSTEM_USERNAME: 1000,
+  SYSTEM_USERNAME: 'SYSTEM',
 });

@@ -1,6 +1,6 @@
 version: '3'
 services:
-  stock_management:
+  events-api:
     build: .
     command: nodemon start
     volumes:
