@@ -1,0 +1,22 @@
+@startuml
+
+skinparam monochrome true
+
+node "AWS Cognito" {
+  component [Identity Server]
+}
+node "AWS API Gateway" {
+  component [API Gateway]
+}
+
+node "AWS Amplify" {
+	component [Trail Up UI]
+}
+
+node "Heroku" {
+	component [Events API]
+}
+
+[Trail Up UI] -(0- [Identity Server]:   "   HTTP/HTTPS"
+[Trail Up UI] -(0- [API Gateway]: "  HTTP/HTTPS"
+[API Gateway] -(0- [Events API]: "  HTTP/HTTPS"
